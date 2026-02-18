@@ -24,8 +24,15 @@ function fetchJSON () {
   // Use $.getJSON here to request the JSON data from mUrl
 
   $.getJSON('myImages.json', function(data){
-    // console.log(data)
+    
+    for(let i in data.glyphs){
+      
+      mImages.push(data.glyphs[i])
 
+
+    }
+    $("#photo").attr("src",mImages[0][0].img);
+    console.log(mImages)
   });
 
   // On success, parse the JSON and push each image object into mImages array
