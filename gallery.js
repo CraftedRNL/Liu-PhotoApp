@@ -31,8 +31,9 @@ function fetchJSON () {
 
 
     }
-    $("#photo").attr("src",mImages[0][0].img);
+    
     console.log(mImages)
+    swapPhoto();
   });
 
   // On success, parse the JSON and push each image object into mImages array
@@ -40,6 +41,13 @@ function fetchJSON () {
 }
 // Function to swap and display the next photo in the slideshow
 function swapPhoto () {
+  $("#photo").attr("src",mImages[0][0].img);
+  $(".name").text(mImages[0][0].name)
+  $(".gods").text(mImages[0][0].gods)
+  $(".type").text(mImages[0][0].type)
+  $(".effect").text(mImages[0][0].effect)
+  $(".quote").text(mImages[0][0].quote)
+  $(".ability").text(mImages[0][0].ability)
   // Access mImages[mCurrentIndex] to update the image source and details
   // Update the #photo element's src attribute with the current image's path
   // Update the .location, .description, and .date elements with the current image's details

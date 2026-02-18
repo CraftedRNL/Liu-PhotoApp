@@ -11,8 +11,8 @@
                 "type": "Ritualistic",
                 "effect": "Blessing",
                 "img": "img/myImages/drachma.webp",
-                "quote": "“Wealth I de sire to have; but wrongfully to get it, I do not wish. Justice, even if slow, is sure.”",
-                "ability": "Any valuables (gold or rare gems) found are doubled. <br> <br> Once per long rest, you may sacrifice your valuables to Hades, granting you the ability to summon dead warriors to fight by your side."
+                "quote": "“Wealth I desire to have; but wrongfully to get it, I do not wish. Justice, even if slow, is sure.”",
+                "ability": "Any valuables (gold or rare gems) found are doubled. Once per long rest, you may sacrifice your valuables to Hades, granting you the ability to summon dead warriors to fight by your side."
             },
             {
                 "name": "Palla's Order",
@@ -26,7 +26,7 @@
                 "effect": "Blessing",
                 "img": "img/myImages/oliveTree.jpg",
                 "quote": "“The only true wisdom is in knowing you know nothing.”",
-                "ability": "Resistance to psychic dmg. <br> <br> Once per long rest, summon an Olive Tree within [x] feet around you. For [x] minutes, anyone in a [x]-foot radius around it gains advantage on Wisdom saving throws, checks, and cannot be charmed or frightened; summons olives, when eaten, heals 2d4 + 2 of health."
+                "ability": "Resistance to psychic dmg. Once per long rest, summon an Olive Tree within [x] feet around you. For [x] minutes, anyone in a [x]-foot radius around it gains advantage on Wisdom saving throws, checks, and cannot be charmed or frightened; summons olives, when eaten, heals 2d4 + 2 of health."
             },
             {
                 "name": "Child of the Seas",
@@ -39,7 +39,7 @@
                 "effect": "Blessing",
                 "img": "img/myImages/poseidon.jpg",
                 "quote": "“What belongs to the sea will always return to the sea.”",
-                "ability": "Resistance to cold dmg--your attacks deal 1d6 cold damage. <br> <br> Once per long rest, if on a body of water, creatures standing in a 30ft radius of you must make a strength and dexterity saving throw (DC = 8)."
+                "ability": "Resistance to cold dmg--your attacks deal 1d6 cold damage. Once per long rest, if on a body of water, creatures standing in a 30ft radius of you must make a strength and dexterity saving throw (DC = 8)."
             },
             {
                 "name": "The Eventful One",
@@ -52,7 +52,7 @@
                 "effect": "Blessing",
                 "img": "img/myImages/bacchus.webp",
                 "quote": "“In madness lies sanity.”",
-                "ability": "Gain resistance to poison damage and advantage on saves against being poisoned or diseased.<br> <br> Once per long rest, you may perform a ritual dance or song for 1 minute. All allies who can see or hear you gain temp hp equal to your [CHA] modifier + your proficiency bonus and have advantage on their next attack."
+                "ability": "Gain resistance to poison damage and advantage on saves against being poisoned or diseased. Once per long rest, you may perform a ritual dance or song for 1 minute. All allies who can see or hear you gain temp hp equal to your [CHA] modifier + your proficiency bonus and have advantage on their next attack."
             },
             {
                 "name": "Sky’s Mandate",
@@ -65,7 +65,7 @@
                 "effect": "Blessing",
                 "img": "img/myImages/zeus.webp",
                 "quote": "“You never know how strong you are, until being strong is your only choice.”",
-                "ability": "Your STR and CON stats increase by 2. Adds a 1d8 lightning damage. <br> <br> Once per long rest, you may put in effect a [decree]. For the next minute, you may ignore one rule, restriction, or condition made upon you by anything."
+                "ability": "Your STR and CON stats increase by 2. Adds a 1d8 lightning damage. Once per long rest, you may put in effect a [decree]. For the next minute, you may ignore one rule, restriction, or condition made upon you by anything."
             }
         ],
         "curses": [
@@ -82,7 +82,7 @@
                 "effect": "Curse",
                 "img": "img/myImages/net.jpg",
                 "quote": "“Hephaestus catches his wife, Aphrodite, and Ares having an affair.”",
-                "ability": "Charisma is set to 0. <br> <br> If any [Ares] or [Aphrodite] curses are currently active, saving throws -2."
+                "ability": "Charisma is set to 0. If any [Ares] or [Aphrodite] curses are currently active, saving throws -2."
             },
             {
                 "name": "Mortal Gods",
@@ -97,7 +97,7 @@
                 "effect": "Curse",
                 "img": "img/myImages/troy.jpg",
                 "quote": "“For know that no one is free, except Zeus.”",
-                "ability": "Disadvantage on Wisdom saving throws <br> <br> All healing only works at 50% effectiveness."
+                "ability": "Disadvantage on Wisdom saving throws. All healing only works at 50% effectiveness."
             },
             {
                 "name": "Divine migraine",
@@ -111,7 +111,7 @@
                 "effect": "Curse",
                 "img": "img/myImages/migraine.jpg",
                 "quote": "“He who learns must suffer.”",
-                "ability": "Vulnerability to psychic damage; must make a wisdom saving throw every turn.<br> <br> If you are hit with more than a 50% of your health in slashing dmg, you spawn a mini-athena out of your cranium. "
+                "ability": "Vulnerability to psychic damage; must make a wisdom saving throw every turn. If you are hit with more than a 50% of your health in slashing dmg, you spawn a mini-athena out of your cranium. "
             },
             {
                 "name": "Mad Surrender",
