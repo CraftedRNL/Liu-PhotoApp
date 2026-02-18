@@ -11,11 +11,18 @@ $(document).ready(() => {
   // Select the moreIndicator button and add a click event to:
   // - toggle the rotation classes (rot90 and rot270)
   // - slideToggle the visibility of the .details sectiosn
-
+  $(".moreIndicator").on('click', ()=>{
+    console.log('indicated')
+    $('.details').slideToggle(300)
+  })
   // Select the "Next Photo" button and add a click event to call showNextPhoto
-
+  $("#nextPhoto").on('click', event=>{
+    showNextPhoto()
+  })
   // Select the "Previous Photo" button and add a click event to call showPrevPhoto
-
+ $("#prevPhoto").on('click', event=>{
+    showPrevPhoto()
+  })
   // Call fetchJSON() to load the initial set of images
   fetchJSON()
 })
