@@ -4,9 +4,9 @@ let max = 0;
 let mImages = [] // Array to hold GalleryImage objects
 const mUrl = 'myImages.json' // Replace with actual JSON URL
 const mWaitTime = 5000 // Timer interval in milliseconds
-
+let timer;
 $(document).ready(() => {
-  $('.details').hide() // Hide details initially
+  $('.details').hide() 
   console.log('hi')
   // Call a function here to start the timer for the slideshow
   startTimer();
@@ -22,10 +22,12 @@ $(document).ready(() => {
   // Select the "Next Photo" button and add a click event to call showNextPhoto
   $("#nextPhoto").on('click', event=>{
     showNextPhoto()
+    resetTimer();
   })
   // Select the "Previous Photo" button and add a click event to call showPrevPhoto
  $("#prevPhoto").on('click', event=>{
     showPrevPhoto()
+    resetTimer();
   })
   // Call fetchJSON() to load the initial set of images
   fetchJSON()
@@ -33,9 +35,7 @@ $(document).ready(() => {
 // Function to fetch JSON data and store it in mImages
 function fetchJSON () {
   // Use $.getJSON here to request the JSON data from mUrl
-
   $.getJSON('myImages.json', function(data){
-    
     for(let i in data.glyphs){  
       mImages.push(data.glyphs[i])
     }
@@ -48,8 +48,8 @@ function fetchJSON () {
 // Function to swap and display the next photo in the slideshow
 function swapPhoto () {
   $("#photo").attr("src",mImages[mArrayIndex][mCurrentIndex].img);
-  $(".name").text(mImages[mArrayIndex][mCurrentIndex].name)
-  $(".gods").text(mImages[mArrayIndex][mCurrentIndex].gods)
+  $(".name").text("[" +mImages[mArrayIndex][mCurrentIndex].name + "]")
+  $(".gods").text("[" +mImages[mArrayIndex][mCurrentIndex].gods + "]")
   $(".type").text(mImages[mArrayIndex][mCurrentIndex].type)
   $(".effect").text(mImages[mArrayIndex][mCurrentIndex].effect)
   $(".quote").text(mImages[mArrayIndex][mCurrentIndex].quote)
@@ -61,7 +61,6 @@ function swapPhoto () {
 
 // Advances to the next photo, loops to the first photo if the end of array is reached
 function showNextPhoto () {
- 
   max++;
   mCurrentIndex++;
   if(max ===5){
@@ -100,10 +99,14 @@ function showPrevPhoto () {
 
 // Starter code for the timer function
 function startTimer () {
-  setInterval(() => {
+  timer = setInterval(() => {
     showNextPhoto();
   }, mWaitTime);
   // Create a timer to automatically call `showNextPhoto()` every mWaitTime milliseconds
   // Consider using setInterval to achieve this functionality
   // Hint: Make sure only one timer runs at a time
+}
+function resetTimer(){
+  clearInterval(timer);
+  startTimer();
 }
