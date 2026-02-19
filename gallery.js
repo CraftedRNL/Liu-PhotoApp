@@ -9,13 +9,15 @@ $(document).ready(() => {
   $('.details').hide() // Hide details initially
   console.log('hi')
   // Call a function here to start the timer for the slideshow
-
+  startTimer();
   // Select the moreIndicator button and add a click event to:
   // - toggle the rotation classes (rot90 and rot270)
   // - slideToggle the visibility of the .details sectiosn
-  $(".moreIndicator").on('click', ()=>{
+  $(".moreIndicator").on('click', event=>{
     console.log('indicated')
     $('.details').slideToggle(300)
+    $(event.currentTarget).toggleClass('rot90');
+    $(event.currentTarget).toggleClass('rot270');
   })
   // Select the "Next Photo" button and add a click event to call showNextPhoto
   $("#nextPhoto").on('click', event=>{
@@ -34,17 +36,12 @@ function fetchJSON () {
 
   $.getJSON('myImages.json', function(data){
     
-    for(let i in data.glyphs){
-      
+    for(let i in data.glyphs){  
       mImages.push(data.glyphs[i])
-
-
     }
-    
     console.log(mImages)
     swapPhoto();
   });
-
   // On success, parse the JSON and push each image object into mImages array
   // After JSON is loaded, call swapPhoto() to display the first image
 }
@@ -103,6 +100,9 @@ function showPrevPhoto () {
 
 // Starter code for the timer function
 function startTimer () {
+  setInterval(() => {
+    showNextPhoto();
+  }, mWaitTime);
   // Create a timer to automatically call `showNextPhoto()` every mWaitTime milliseconds
   // Consider using setInterval to achieve this functionality
   // Hint: Make sure only one timer runs at a time
