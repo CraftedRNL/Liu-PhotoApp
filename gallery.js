@@ -1,4 +1,6 @@
 let mCurrentIndex = 0 // Tracks the current image index
+let mArrayIndex = 0;
+let max = 0;
 let mImages = [] // Array to hold GalleryImage objects
 const mUrl = 'myImages.json' // Replace with actual JSON URL
 const mWaitTime = 5000 // Timer interval in milliseconds
@@ -48,13 +50,13 @@ function fetchJSON () {
 }
 // Function to swap and display the next photo in the slideshow
 function swapPhoto () {
-  $("#photo").attr("src",mImages[0][0].img);
-  $(".name").text(mImages[0][0].name)
-  $(".gods").text(mImages[0][0].gods)
-  $(".type").text(mImages[0][0].type)
-  $(".effect").text(mImages[0][0].effect)
-  $(".quote").text(mImages[0][0].quote)
-  $(".ability").text(mImages[0][0].ability)
+  $("#photo").attr("src",mImages[mArrayIndex][mCurrentIndex].img);
+  $(".name").text(mImages[mArrayIndex][mCurrentIndex].name)
+  $(".gods").text(mImages[mArrayIndex][mCurrentIndex].gods)
+  $(".type").text(mImages[mArrayIndex][mCurrentIndex].type)
+  $(".effect").text(mImages[mArrayIndex][mCurrentIndex].effect)
+  $(".quote").text(mImages[mArrayIndex][mCurrentIndex].quote)
+  $(".ability").text(mImages[mArrayIndex][mCurrentIndex].ability)
   // Access mImages[mCurrentIndex] to update the image source and details
   // Update the #photo element's src attribute with the current image's path
   // Update the .location, .description, and .date elements with the current image's details
@@ -62,12 +64,39 @@ function swapPhoto () {
 
 // Advances to the next photo, loops to the first photo if the end of array is reached
 function showNextPhoto () {
+ 
+  max++;
+  mCurrentIndex++;
+  if(max ===5){
+    mArrayIndex++;
+    mCurrentIndex= 0;
+  }else if(max ===10){
+    mArrayIndex = 0;
+    mCurrentIndex= 0;
+    max = 0;
+  }
+   console.log("index:" +mCurrentIndex + " Array:" + mArrayIndex + " Max:" + max)
+  swapPhoto();
   // Increment mCurrentIndex and call swapPhoto()
   // Ensure it loops back to the beginning if mCurrentIndex exceeds array length
 }
 
 // Goes to the previous photo, loops to the last photo if mCurrentIndex goes negative
 function showPrevPhoto () {
+  
+  
+  if(max===0){
+    mCurrentIndex=5;
+    mArrayIndex=1;
+    max = 10;
+  }else if(max === 5){
+    mArrayIndex=0;
+    mCurrentIndex=5;
+  }
+  max--;
+  mCurrentIndex--;
+  console.log("index:" +mCurrentIndex + " Array:" + mArrayIndex+ " Max:" + max)
+  swapPhoto();
   // Decrement mCurrentIndex and call swapPhoto()
   // Ensure it loops to the end if mCurrentIndex is less than 0
 }
