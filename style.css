@@ -25,7 +25,7 @@ body {
 
 /* Style for the photo displayed in the slideshow */
 .thumbnail {
-    
+    object-fit: fill;
     width: 100%;
     max-width: 100%;
     height: auto;

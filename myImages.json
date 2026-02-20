@@ -10,7 +10,7 @@
                 "myth": "Greek",
                 "type": "Ritualistic",
                 "effect": "Blessing",
-                "img": "img/myImages/drachma.webp",
+                "img": "img/myImages/drachma.png",
                 "quote": "“Wealth I desire to have; but wrongfully to get it, I do not wish. Justice, even if slow, is sure.”",
                 "ability": "Any valuables (gold or rare gems) found are doubled. Once per long rest, you may sacrifice your valuables to Hades, granting you the ability to summon dead warriors to fight by your side."
             },
@@ -24,7 +24,7 @@
                 "myth": "Greek",
                 "type": "Ability",
                 "effect": "Blessing",
-                "img": "img/myImages/oliveTree.jpg",
+                "img": "img/myImages/oliveTree.png",
                 "quote": "“The only true wisdom is in knowing you know nothing.”",
                 "ability": "Resistance to psychic dmg. Once per long rest, summon an Olive Tree within [x] feet around you. For [x] minutes, anyone in a [x]-foot radius around it gains advantage on Wisdom saving throws, checks, and cannot be charmed or frightened; summons olives, when eaten, heals 2d4 + 2 of health."
             },
@@ -37,7 +37,7 @@
                 "myth": "Greek",
                 "type": "Ability",
                 "effect": "Blessing",
-                "img": "img/myImages/poseidon.jpg",
+                "img": "img/myImages/s.o.n.png",
                 "quote": "“What belongs to the sea will always return to the sea.”",
                 "ability": "Resistance to cold dmg--your attacks deal 1d6 cold damage. Once per long rest, if on a body of water, creatures standing in a 30ft radius of you must make a strength and dexterity saving throw (DC = 8)."
             },
@@ -50,7 +50,7 @@
                 "myth": "Greek",
                 "type": "Transformation",
                 "effect": "Blessing",
-                "img": "img/myImages/bacchus.webp",
+                "img": "img/myImages/winey.png",
                 "quote": "“In madness lies sanity.”",
                 "ability": "Gain resistance to poison damage and advantage on saves against being poisoned or diseased. Once per long rest, you may perform a ritual dance or song for 1 minute. All allies who can see or hear you gain temp hp equal to your [CHA] modifier + your proficiency bonus and have advantage on their next attack."
             },
@@ -63,7 +63,7 @@
                 "myth": "Greek",
                 "type": "Authority",
                 "effect": "Blessing",
-                "img": "img/myImages/zeus.webp",
+                "img": "img/myImages/zeuz.png",
                 "quote": "“You never know how strong you are, until being strong is your only choice.”",
                 "ability": "Your STR and CON stats increase by 2. Adds a 1d8 lightning damage. Once per long rest, you may put in effect a [decree]. For the next minute, you may ignore one rule, restriction, or condition made upon you by anything."
             }
@@ -80,7 +80,7 @@
                 "myth": "Greek",
                 "type": "Passive",
                 "effect": "Curse",
-                "img": "img/myImages/net.jpg",
+                "img": "img/myImages/gotcha.png",
                 "quote": "“Hephaestus catches his wife, Aphrodite, and Ares having an affair.”",
                 "ability": "Charisma is set to 0. If any [Ares] or [Aphrodite] curses are currently active, saving throws -2."
             },
@@ -95,7 +95,7 @@
                 "myth": "Greek",
                 "type": "Passive",
                 "effect": "Curse",
-                "img": "img/myImages/troy.jpg",
+                "img": "img/myImages/work.png",
                 "quote": "“For know that no one is free, except Zeus.”",
                 "ability": "Disadvantage on Wisdom saving throws. All healing only works at 50% effectiveness."
             },
@@ -109,7 +109,7 @@
                 "myth": "Greek",
                 "type": "Passive",
                 "effect": "Curse",
-                "img": "img/myImages/migraine.jpg",
+                "img": "img/myImages/divineM.png",
                 "quote": "“He who learns must suffer.”",
                 "ability": "Vulnerability to psychic damage; must make a wisdom saving throw every turn. If you are hit with more than a 50% of your health in slashing dmg, you spawn a mini-athena out of your cranium. "
             },
@@ -122,7 +122,7 @@
                 "myth": "Greek",
                 "type": "Passive",
                 "effect": "Curse",
-                "img": "img/myImages/insanity.webp",
+                "img": "img/myImages/blimey.png",
                 "quote": "“Insane wine dude.”",
                 "ability": "You have a disadvantage on all CHA checks; whenever you roll a d1-d5, you gain one level of exhaustion unless you drink alcohol. "
             },
@@ -135,7 +135,7 @@
                 "myth": "Greek",
                 "type": "Passive",
                 "effect": "Curse",
-                "img": "img/myImages/underworld.jpg",
+                "img": "img/myImages/underworld.png",
                 "quote": "“No wealth, no land, no silver, nor gold. Nothing satisfies me but your soul.”",
                 "ability": "Your soul becomes extremely fragile; take disadvantage on psychic damage. Every long rest, take a 12 DC Wisdom roll; if you fail, your soul gets damaged. Damaged enoug,h and you get sent to the underworld. "
             }
