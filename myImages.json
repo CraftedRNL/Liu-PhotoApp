@@ -89,8 +89,7 @@
                 "tier": "Godlike",
                 "gods": [
                     "Apollo",
-                    "Poseidon",
-                    "Zeus"
+                    "Poseidon"
                 ],
                 "myth": "Greek",
                 "type": "Passive",
