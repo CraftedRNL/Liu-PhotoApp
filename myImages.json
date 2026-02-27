@@ -10,8 +10,8 @@
                 "myth": "Greek",
                 "type": "Ritualistic",
                 "effect": "Blessing",
-                "img": "../img/myImages/drachma.png",
-                "animal":"img/myImages/ram.png",
+                "img": "img/myImages/drachma.png",
+                "animal":"../img/myImages/ram.png",
                 "quote": "“Wealth I desire to have; but wrongfully to get it, I do not wish. Justice, even if slow, is sure.”",
                 "ability": "Any valuables (gold or rare gems) found are doubled. Once per long rest, you may sacrifice your valuables to Hades, granting you the ability to summon dead warriors to fight by your side."
             },
