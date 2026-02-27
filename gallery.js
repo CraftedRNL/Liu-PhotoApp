@@ -85,5 +85,5 @@ function resetTimer() {
 function showBackground(){
   $('#invis').fadeIn(500);
   $('#invis').fadeOut(500);
-  $('#invis').css('background-image', mImages[mArrayIndex][mCurrentIndex].animal);
+  $('#invis').css('background-image',"" + mImages[mArrayIndex][mCurrentIndex].animal + "");
 }
