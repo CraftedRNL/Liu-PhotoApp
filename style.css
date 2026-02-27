@@ -6,7 +6,7 @@ body {
     height: 100%;
     overflow-x: hidden;
     font-family: 'Century Gothic', sans-serif;
-    background-image: url('/img/myImages/greek.jpg');
+    background-image: url('../img/myImages/greek.jpg');
     background-size: contain;
     /* background-attachment: fixed; */
 }
