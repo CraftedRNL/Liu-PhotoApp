@@ -107,3 +107,16 @@ Make it animate nicely. You'll need CSS3 for this */
     /* Add 270-degree rotation */
     transform: rotate(270deg);
 }
+.invis{
+    position: absolute;
+    z-index: 100;
+    display: none;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    background-size: contain;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-image: url("../img/myImages/ram.png");
+}
